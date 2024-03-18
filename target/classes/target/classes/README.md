@@ -38,7 +38,7 @@ public class Hammurabi {         // must save in a file named Hammurabi.java
     }
 
     void playGame() {
-        // declare local variables here: grain, population, etc.
+        // declare local variables here: grain, totalPopulation, etc.
         // statements go after the declations
     }
 
