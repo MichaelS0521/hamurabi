@@ -83,10 +83,12 @@ public class Hammurabi {
     public static void endGame() {
         System.out.println(
                 "Your term as Leader has finished after 10 years!\n" +
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" +
                 "Your city has had a total of [" + newPopulation + "] people enter your city.\n" +
                 "Unfortunately over the years your city has had [" + totalDeaths() + "] deaths.\n" +
                 "The city has a total of [" + bushelsOfGrainStored + "] bushels.\n" +
-                "The city owns [" + acresOfLand + "] acres.\n");
+                "The city owns [" + acresOfLand + "] acres.\n"+
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         playGame();
     }
 
