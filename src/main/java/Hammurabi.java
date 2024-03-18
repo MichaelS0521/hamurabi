@@ -69,7 +69,9 @@ public class Hammurabi {
 
 
         }
-
+    /*
+    User Selections Methods
+     */
     public static String playSelect() {
         System.out.println("Would you like to play the game? [yes/no]");
         return scanner.next().toLowerCase();
@@ -79,6 +81,32 @@ public class Hammurabi {
         System.out.println("Would you like to play the game? [yes/no]");
         return scanner.next().toLowerCase();
     }
+
+    public static void acresOption() {
+        System.out.println("How many acres would you wish to buy or sell?");
+        userAcresOption = scanner.nextInt();
+    }
+
+    public static void bushelsOption() {
+        System.out.println("How many bushels would you wish to feed your people?");
+        userBushelsOption = scanner.nextInt();
+    }
+
+    public static void plantingOption() {
+        System.out.println("How many bushels would you wish to plant?");
+        userPlantingOption = scanner.nextInt();
+    }
+    /*
+    Implementing User inputs Method
+     */
+    public static void implementingOptions() {
+        acresOfLand += userAcresOption;
+        bushelsOfGrainStored -= userBushelsOption;
+        bushelsOfGrainStored -= Math.multiplyExact(userPlantingOption, 2);
+    }
+    /*
+    Prompts Methods
+     */
 
     public static void endGame() {
         System.out.println(
@@ -120,27 +148,6 @@ public class Hammurabi {
                 "Land is currently worth [" + acresValue + "] bushels per acre.\n" +
                 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
     }
-
-    public static void acresOption() {
-        System.out.println("How many acres would you wish to buy or sell?");
-        userAcresOption = scanner.nextInt();
-    }
-
-    public static void bushelsOption() {
-        System.out.println("How many bushels would you wish to feed your people?");
-        userBushelsOption = scanner.nextInt();
-    }
-
-    public static void plantingOption() {
-        System.out.println("How many bushels would you wish to plant?");
-        userPlantingOption = scanner.nextInt();
-    }
-
-    public static void implementingOptions() {
-            acresOfLand += userAcresOption;
-            bushelsOfGrainStored -= userBushelsOption;
-            bushelsOfGrainStored -= Math.multiplyExact(userPlantingOption, 2);
-        }
     /*
     Population Methods
      */
